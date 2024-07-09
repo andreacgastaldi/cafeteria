@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agregar producto 🚀</title>
+    <title>Agregar Items al Menu 🚀</title>
     <link rel="stylesheet" href="./static/css/estilos.css">
 </head>
 
@@ -19,7 +19,7 @@
     <div class="logo-centrado">
         <img src="./static/imagenes/logo-22cafe.png" alt="logo">
     </div>
-    <h1>Agregar Productos al Inventario</h1><br>
+    <h1>Agregar Items al Menu</h1><br>
 
     <!--enctype="multipart/form-data" es necesario para enviar archivos al back.-->
     <form id="formulario" enctype="multipart/form-data">
@@ -61,18 +61,18 @@
                     } else {
                         // Si hubo un error, lanzar explícitamente una excepción
                         // para ser "catcheada" más adelante
-                        throw new Error('Error al agregar el producto.');
+                        throw new Error('Error al agregar el item al Menu.');
                     }
             })
 
-                //Respuesta OK, muestra una alerta informando que el producto se agregó correctamente y limpia los campos del formulario para que puedan ser utilizados para un nuevo producto.
+                //Respuesta OK, muestra una alerta informando que el menu se agregó correctamente y limpia los campos del formulario para que puedan ser utilizados para un nuevo item al menu.
                 .then(function (data) {
-                    alert('Producto agregado correctamente.');
+                    alert('Item agregado correctamente al menu.');
                 })
 
                 // En caso de error, mostramos una alerta con un mensaje de error.
                 .catch(function (error) {
-                    alert('Error al agregar el producto.');
+                    alert('Error al agregar el item.');
                 })
 
                 // Limpiar el formulario en ambos casos (éxito o error)

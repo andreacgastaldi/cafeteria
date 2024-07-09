@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listado de Productos 🚀</title>
+    <title>Menu 🚀</title>
     <link rel="stylesheet" href="./static/css/estilos.css">
 </head>
 
@@ -21,7 +21,7 @@
     </div>
     <h1>Menu de la Cafeteria 22</h1><br>
 
-    <table> <!-- Se crea una tabla para mostrar los productos. -->
+    <table> <!-- Se crea una tabla para mostrar el Menu. -->
         <thead> <!--Encabezado de la tabla con columnas para código, descripción, cantidad, precio y acciones.-->
             <tr>
                 <th>Descripción</th>               
@@ -42,7 +42,7 @@
         const URL = "https://andreag.pythonanywhere.com/"
         
 
-        // Realizamos la solicitud GET al servidor para obtener todos los productos.
+        // Realizamos la solicitud GET al servidor para obtener el Menu.
         fetch(URL + 'menu')
             .then(function (response) {
                 if (response.ok) {
@@ -56,7 +56,7 @@
 
             //Esta función maneja los datos convertidos del JSON.
             .then(function (data) {
-                let tablaMenu = document.getElementById('tablaMenu'); //Selecciona el elemento del DOM donde se mostrarán los productos.
+                let tablaMenu = document.getElementById('tablaMenu'); //Selecciona el elemento del DOM donde se mostrará el Menu.
 
                 // Iteramos sobre cada producto y agregamos filas a la tabla
                 for (let menu of data) {
@@ -66,15 +66,15 @@
                         //Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
                         //'<td><img src=https://www.pythonanywhere.com/user/USUARIO/files/home/USUARIO/mysite/static/imagenes/' + producto.imagen_url +' alt="Imagen del producto" style="width: 100px;"></td>' + '<td align="right">' + producto.proveedor + '</td>';
                     
-                    //Una vez que se crea la fila con el contenido del producto, se agrega a la tabla utilizando el método appendChild del elemento tablaProductos.
+                    //Una vez que se crea la fila con el contenido del producto, se agrega a la tabla utilizando el método appendChild del elemento tablaMenu.
                     tablaMenu.appendChild(fila);
                 }
             })
 
-            //Captura y maneja errores, mostrando una alerta en caso de error al obtener los productos.
+            //Captura y maneja errores, mostrando una alerta en caso de error al obtener el menu.
             .catch(function (error) {
                 // Código para manejar errores
-                alert('Error al obtener el menu!!!.');
+                alert('Error 1 al obtener el Menu.');
             });
     </script>
 </body>
