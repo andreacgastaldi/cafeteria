@@ -33,11 +33,16 @@ class Catalogo:
             user=user,
             password=password
         )
+        print(host)
+        print(user)
+        print(database)
+        print(input"mostrar los datos")
         self.cursor = self.conn.cursor()
 
         # Intentamos seleccionar la base de datos
         try:
             self.cursor.execute(f"USE {database}")
+            print(input"una tecla")
 
         except mysql.connector.Error as err:
             # Si la base de datos no existe, la creamos
