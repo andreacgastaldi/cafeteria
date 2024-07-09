@@ -33,16 +33,12 @@ class Catalogo:
             user=user,
             password=password
         )
-        print(host)
-        print(user)
-        print(database)
-        print(input"mostrar los datos")
+        
         self.cursor = self.conn.cursor()
 
         # Intentamos seleccionar la base de datos
         try:
             self.cursor.execute(f"USE {database}")
-            print(input"una tecla")
 
         except mysql.connector.Error as err:
             # Si la base de datos no existe, la creamos
@@ -125,16 +121,16 @@ class Catalogo:
 #Database host address:andreag.mysql.pythonanywhere-services.com
 #Username:andreag
 #Name:andreag$default
-#catalogo = Catalogo(host='localhost', user='root', password='', database='menu')
+catalogo = Catalogo(host='localhost', user='root', password='', database='menu')
 
-catalogo = Catalogo(host='andreag.mysql.pythonanywhere-services.com', user='andreag', password='pampa2024', database='andreag$menu')
+#catalogo = Catalogo(host='andreag.mysql.pythonanywhere-services.com', user='andreag', password='pampa2024', database='andreag$menu')
 
 
 # Carpeta para guardar las imagenes.
-#RUTA_DESTINO = './static/imagenes/'
+RUTA_DESTINO = './static/imagenes/'
 
 #Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
-RUTA_DESTINO = '/home/andreag/cafeteria22/static/imagenes'
+#RUTA_DESTINO = '/home/andreag/cafeteria22/static/imagenes'
 
 
 #--------------------------------------------------------------------

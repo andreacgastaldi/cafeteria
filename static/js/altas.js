@@ -1,44 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agregar Items al Menu 🚀</title>
-    <link rel="stylesheet" href="./static/css/estilos.css">
-</head>
-
-<body>
-    <header>
-        <nav class="navbar-index ">
-            <img class="logo-nav" src="./static/imagenes/logo-22cafe.png" alt="logo cafeteria 22">
-        </nav>
-    </header>
-
-    <div class="logo-centrado">
-        <img src="./static/imagenes/logo-22cafe.png" alt="logo">
-    </div>
-    <h1>Agregar Items al Menu</h1><br>
-
-    <!--enctype="multipart/form-data" es necesario para enviar archivos al back.-->
-    <form id="formulario" enctype="multipart/form-data">
-        
-        <label for="descripcion">Descripción:</label>
-        <input type="text" id="descripcion" name="descripcion" required><br>
-
-        <label for="precio">Precio:</label>
-        <input type="number" step="0.01" id="precio" name="precio" required><br>
-
-        <button type="submit">Agregar Item al Menu</button>
-        <a href="index.html">Menu principal</a>
-    </form>
-
-    <script>
-        // const URL = "http://127.0.0.1:5000/"
+         const URL = "http://127.0.0.1:5000/"
 
         //Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
-        const URL = "https://andreag.pythonanywhere.com/"
+        //const URL = "https://andreag.pythonanywhere.com/"
         
 
         // Capturamos el evento de envío del formulario
@@ -81,7 +45,4 @@
                     document.getElementById('precio').value = "";
                 });
         })
-    </script>
-</body>
-
-</html>
+    
