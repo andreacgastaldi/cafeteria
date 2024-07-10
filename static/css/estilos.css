@@ -12,6 +12,19 @@ body {
     color:white;
 }
 
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .contenedor-centrado {
     display:flex;
     width: 100%;
@@ -23,7 +36,6 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 5px;
-    margin-top: 120px;
 }
 
 .navbar-index{
