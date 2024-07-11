@@ -121,9 +121,9 @@ class Catalogo:
 #Database host address:andreag.mysql.pythonanywhere-services.com
 #Username:andreag
 #Name:andreag$default
-catalogo = Catalogo(host='localhost', user='root', password='', database='menu')
+#catalogo = Catalogo(host='localhost', user='root', password='', database='menu')
 
-#catalogo = Catalogo(host='andreag.mysql.pythonanywhere-services.com', user='andreag', password='pampa2024', database='andreag$menu')
+catalogo = Catalogo(host='andreag.mysql.pythonanywhere-services.com', user='andreag', password='pampa2024', database='andreag$menu')
 
 
 # Carpeta para guardar las imagenes.

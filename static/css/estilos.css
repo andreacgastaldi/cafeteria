@@ -4,12 +4,22 @@
     font-family: 'Quicksand', sans-serif;
     margin: 0;
 }
-
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
 body {
     font-family: Mon;
     /* background-color: #153448; */
     background-color: #948979;
     color:white;
+    flex:1;
+}
+main {
+    flex: 1; /* Permite que el contenido principal se expanda */
 }
 
 html {
@@ -46,8 +56,6 @@ main {
     width: 100vw;
     height: 100px;
     background-color: #4a4d4f;  
-    /* background-color: #948979; */
-    /* background-color: #DFD0B8; */ 
     display: flex;
     justify-content: flex-start;
     align-items: center; 
@@ -98,6 +106,30 @@ table {
     border: 1px solid lightslategray;
     border-radius: 5px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    /* border-collapse: collapse; */
+}
+/* Estilos para el encabezado de la tabla */
+table thead {
+    background-color:  #878176;
+    color: #DFD0B8;
+}
+
+table th {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #948979;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-right: 1 px solid #4a4d4f;
+}
+
+table th:first-child {
+    border-top-left-radius: 5px;
+}
+
+table th:last-child {
+    border-top-right-radius: 5px;
+    /* border-right:none ; */
 }
 
 label {
@@ -156,6 +188,8 @@ a {
 }
 
 a:hover {
-    background-color: #1d1a39;
-    color:#fdab13
+    background-color: #4a4d4f;
+    color:#e0dbdb
 }
+
+
