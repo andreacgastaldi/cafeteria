@@ -1,8 +1,8 @@
 
-        // const URL = "http://127.0.0.1:5000/"
+        const URL = "http://127.0.0.1:5000/"
         
         // Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
-        const URL = "https://andreag.pythonanywhere.com/"
+        //const URL = "https://andreag.pythonanywhere.com/"
 
         // Variables de estado para controlar la visibilidad y los datos del formulario
         let codigo = '';
